@@ -11,12 +11,12 @@ public class StringPermutation {
             return;
         }
         for (int i = 0; i < ip.length(); i++) {
-            getAllPermutationsOfString(ip.substring(0, i) + ip.substring(i + 1, ip.length()), cStr + ip.charAt(i));
+            getAllPermutationsOfString(ip.substring(0, i) + ip.substring(i + 1), cStr + ip.charAt(i));
         }
     }
 
     public static void main(String[] args) {
-        String ip = "bab";
+        String ip = "acb";
         getAllPermutationsOfString(ip, "");
         System.out.println(count);
     }
