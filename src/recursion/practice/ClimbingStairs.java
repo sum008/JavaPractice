@@ -21,20 +21,22 @@ public class ClimbingStairs {
         }
     }
 
-    private static void findAllPossibleWaysToClimbStairsV2(List<Integer> op, int[] possibleSteps, int stairLen,
-            int stepsTook) {
-        if (stepsTook > stairLen) {
-            return;
-        }
+    // private static void findAllPossibleWaysToClimbStairsV2(List<Integer> op,
+    // int[] possibleSteps, int stairLen,
+    // int stepsTook) {
+    // if (stepsTook > stairLen) {
+    // return;
+    // }
 
-        for (int i = 0; i < possibleSteps.length; i++) {
-            findAllPossibleWaysToClimbStairsV2(op, possibleSteps, stairLen, stepsTook + possibleSteps[i]);
-            if (stepsTook >= stairLen) {
-                op.set(0, op.get(0) + 1);
-                return;
-            }
-        }
-    }
+    // for (int i = 0; i < possibleSteps.length; i++) {
+    // findAllPossibleWaysToClimbStairsV2(op, possibleSteps, stairLen, stepsTook +
+    // possibleSteps[i]);
+    // if (stepsTook >= stairLen) {
+    // op.set(0, op.get(0) + 1);
+    // return;
+    // }
+    // }
+    // }
 
     public static void main(String[] args) {
         List<Integer> op = Arrays.asList(1);

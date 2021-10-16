@@ -14,7 +14,7 @@ public class StringSubstring {
     }
 
     public static void main(String[] a) {
-        String input = "abc";
+        String input = "123";
         getAllStringSubstrings(input, "");
     }
 }
