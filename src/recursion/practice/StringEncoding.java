@@ -44,16 +44,12 @@ public class StringEncoding {
             if (charMap.get(preStr) == null) {
                 return;
             }
-            // if (charMap.get(postStr) != null) {
-            // String localValidEncoding = validEncodings;
-            // localValidEncoding += charMap.get(preStr) + charMap.get(postStr);
-            // System.out.println(localValidEncoding);
-            // }
-            getAllPossibleStringEncodings(validEncodings + charMap.get(preStr), postStr);
-
-            if (charMap.get(remainingString.substring(i)) != null) {
-                System.out.println(validEncodings + charMap.get(remainingString.substring(i)));
+            if (charMap.get(postStr) != null) {
+                String localValidEncoding = validEncodings;
+                localValidEncoding += charMap.get(preStr) + charMap.get(postStr);
+                System.out.println(localValidEncoding);
             }
+            getAllPossibleStringEncodings(validEncodings + charMap.get(preStr), postStr);
         }
     }
 
