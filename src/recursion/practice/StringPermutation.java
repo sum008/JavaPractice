@@ -16,7 +16,7 @@ public class StringPermutation {
     }
 
     public static void main(String[] args) {
-        String ip = "acb";
+        String ip = "abc";
         getAllPermutationsOfString(ip, "");
         System.out.println(count);
     }
